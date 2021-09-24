@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Cart = (props) => {
 
     const { cart } = props;
@@ -19,7 +20,7 @@ const Cart = (props) => {
     const grandtotal = total + shipping + tax;
 
     return (
-        <div>
+        <div style={{ backgroundColor: 'chocolate', padding: "10px", position: 'fixed', width: '300px' }} className="oder-container">
             <h3>Oder Summary</h3>
             <h5>Items Ordered: {totalQuantity} </h5>
             <p>Total: {total.toFixed(2)}</p>
