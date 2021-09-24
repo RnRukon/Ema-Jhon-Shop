@@ -1,0 +1,25 @@
+.product {
+    display: flex;
+    border-bottom: 1px solid darkorange;
+    margin: 5px;
+    padding: 20px;
+}
+
+.productName {
+    color: blue;
+    font-weight: 400;
+}
+
+.btn-regular {
+    background-color: darkorange;
+    color: rgb(255, 255, 254);
+    width: 150px;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating-color {
+    color: rgb(255, 183, 0);
+}
