@@ -7,7 +7,7 @@ const Orders = () => {
     const history = useHistory()
     const [orders, setOrders] = useState([]) || "";
     useEffect(() => {
-        fetch(`http://localhost:5000/orders?email=${user.email}`, {
+        fetch(`https://salty-retreat-38168.herokuapp.com/orders?email=${user.email}`, {
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('idToken')}`
             }
@@ -20,10 +20,10 @@ const Orders = () => {
                 }
             })
             .then(data => setOrders(data))
-    }, [])
+    }, [user.email])
     return (
         <div>
-            <h2>My Orders {orders.length}</h2>
+            {/* <h2>My Orders {orders.length}</h2> */}
             {
                 orders.map(order => <div key={order._id}>
                     <h1>{order.firstName}</h1>
